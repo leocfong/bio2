@@ -1,0 +1,14 @@
+C:\Work\bio2\bin\Debug\netcoreapp3.1\bio2.exe
+C:\Work\bio2\bin\Debug\netcoreapp3.1\bio2.deps.json
+C:\Work\bio2\bin\Debug\netcoreapp3.1\bio2.runtimeconfig.json
+C:\Work\bio2\bin\Debug\netcoreapp3.1\bio2.runtimeconfig.dev.json
+C:\Work\bio2\bin\Debug\netcoreapp3.1\bio2.dll
+C:\Work\bio2\bin\Debug\netcoreapp3.1\bio2.pdb
+C:\Work\bio2\obj\Debug\netcoreapp3.1\bio2.csproj.AssemblyReference.cache
+C:\Work\bio2\obj\Debug\netcoreapp3.1\bio2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\bio2\obj\Debug\netcoreapp3.1\bio2.AssemblyInfoInputs.cache
+C:\Work\bio2\obj\Debug\netcoreapp3.1\bio2.AssemblyInfo.cs
+C:\Work\bio2\obj\Debug\netcoreapp3.1\bio2.csproj.CoreCompileInputs.cache
+C:\Work\bio2\obj\Debug\netcoreapp3.1\bio2.dll
+C:\Work\bio2\obj\Debug\netcoreapp3.1\bio2.pdb
+C:\Work\bio2\obj\Debug\netcoreapp3.1\bio2.genruntimeconfig.cache
