@@ -9,7 +9,7 @@ namespace bio2
         static void Main(string[] args)
         {
 
-            PartialDigest p  = new PartialDigest();
+            AllLeaves p  = new AllLeaves();
             p.Main();
 
         }

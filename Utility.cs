@@ -41,5 +41,32 @@ namespace bio2
                 b.Remove(b.First(y => y == x));
             }
         }
+        public static void NextLeaf(int[] a, int L, int k)
+        {
+            for (int i = L; i >= 0; i--)
+            {
+                if (a[i] < k)
+                {
+                    a[i] = a[i] + 1;
+                    return;
+                }
+                a[i] = 1;
+
+            }
+        }
+        public static void NextLeaf(List<int> a, int k)
+        {
+            int L = a.Count - 1;
+            for (int i = L; i >= 0; i--)
+            {
+                if (a[i] < k)
+                {
+                    a[i] = a[i] + 1;
+                    return;
+                }
+                a[i] = 1;
+
+            }
+        }
     }
 }
