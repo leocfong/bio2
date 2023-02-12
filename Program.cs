@@ -9,7 +9,7 @@ namespace bio2
         static void Main(string[] args)
         {
 
-            AllLeaves p  = new AllLeaves();
+            BruteForceMedianSearch p  = new BruteForceMedianSearch();
             p.Main();
 
         }

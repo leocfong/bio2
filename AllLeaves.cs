@@ -14,7 +14,7 @@ namespace bio2
             while (true)
             {
                 Utility.print(a);
-                Utility.NextLeaf(a,  9);
+                Utility.NextLeaf(a,  4);
                 if (Enumerable.SequenceEqual(ones, a))
                 {
                     break;
