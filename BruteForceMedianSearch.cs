@@ -20,10 +20,8 @@ namespace bio2
             int bestScore = 0;
             while (true)
             {
-               // Utility.print(a);
-                //Utility.NextLeaf(a, 6);
                 Utility.NextLeaf(a, smp.n-smp.l);
-                int curScore = Utility.Score(smp.dna_int, a, smp.l);
+                int curScore = Utility.Score(smp.dna_int, a, smp.l, 3);
                 if (curScore > bestScore)
                 {
                     bestScore = curScore;

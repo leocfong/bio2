@@ -9,7 +9,7 @@ namespace bio2
         static void Main(string[] args)
         {
 
-            BruteForceMedianSearch p  = new BruteForceMedianSearch();
+            SimpleMotifSearch p  = new SimpleMotifSearch();
             p.Main();
 
         }

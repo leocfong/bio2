@@ -192,7 +192,7 @@ namespace bio2
             return dna_int;
 
         }
-        public static int Score(int[,] dna_int, int[] a, int l)
+        public static int Score(int[,] dna_int, int[] a, int l, int ind)
         {
             int t = dna_int.GetLength(0);
             int n = dna_int.GetLength(1);
@@ -201,7 +201,7 @@ namespace bio2
             for (int i=0;i<l;i++)
             {
                 int[] sc = new int[4];
-                for (int j=0;j<t;j++)
+                for (int j=0;j<(ind+1);j++)
                 {
                     int index = dna_int[j, a[j] + i];
                     sc[index]++;
