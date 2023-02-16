@@ -27,8 +27,8 @@ namespace bio2
         public static void print(int[] v)
         {
             int t = v.Count();
-   
-            for (int i = 0; i < t-1; i++)
+
+            for (int i = 0; i < t - 1; i++)
             {
                 Console.Write(v[i]);
                 Console.Write(",");
@@ -39,18 +39,18 @@ namespace bio2
         {
             int t = v.GetLength(0);
             int n = v.GetLength(1);
-            for (int i=0;i<t;i++)
+            for (int i = 0; i < t; i++)
             {
-                for (int j=0;j<n;j++)
+                for (int j = 0; j < n; j++)
                 {
-                    Console.Write(v[i,j]);
+                    Console.Write(v[i, j]);
                 }
                 Console.WriteLine();
             }
         }
         public static bool IsAInB(List<int> a, List<int> b)
         {
-            foreach(int x in a)
+            foreach (int x in a)
             {
                 if (b.Contains(x) == false)
                 {
@@ -96,14 +96,14 @@ namespace bio2
         }
         public static int NextVertex(List<int> a, int i, int L, int k)
         {
-            if (i<L)
+            if (i < L)
             {
                 a[i + 1] = 1;
                 return i + 1;
             }
             else
             {
-                for (int j=L; j >= 0; j--)
+                for (int j = L; j >= 0; j--)
                 {
                     if (a[j] < k)
                     {
@@ -136,7 +136,7 @@ namespace bio2
         }
         public static int ByPass(int[] a, int i, int L, int k)
         {
-            for (int j = i; i>=0; j--)
+            for (int j = i; i >= 0; j--)
             {
                 if (a[j] < k)
                 {
@@ -196,12 +196,12 @@ namespace bio2
         {
             int t = dna_int.GetLength(0);
             int n = dna_int.GetLength(1);
-      
+
             int[] maxscore = new int[n];
-            for (int i=0;i<l;i++)
+            for (int i = 0; i < l; i++)
             {
                 int[] sc = new int[4];
-                for (int j=0;j<(ind+1);j++)
+                for (int j = 0; j < (ind + 1); j++)
                 {
                     int index = dna_int[j, a[j] + i];
                     sc[index]++;
@@ -210,6 +210,27 @@ namespace bio2
             }
             int ms = maxscore.Sum();
             return ms;
+        }
+
+        public static void Swap(int[] a, int i, int j)
+        {
+            int t = a[i];
+            a[i] = a[j];
+            a[j] = t;
+        }
+        public static bool IsIdentityPermutation(int[] a)
+        {
+            int l = a.Length;
+            int lc = a[0];
+            if (l < 2) { return true; }
+            for (int i=1; i<l; i++)
+            {
+                int c = a[i];
+                int g = c - lc;
+                if (g != 1) return false;
+                lc = c;
+            }
+            return true;
         }
     }
 }

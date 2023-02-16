@@ -9,7 +9,7 @@ namespace bio2
         static void Main(string[] args)
         {
 
-            SimpleMotifSearch p  = new SimpleMotifSearch();
+            GreedyMotifSearch p  = new GreedyMotifSearch();
             p.Main();
 
         }
