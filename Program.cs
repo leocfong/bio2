@@ -9,7 +9,7 @@ namespace bio2
         static void Main(string[] args)
         {
 
-            MergeSort p  = new MergeSort();
+            DuplicateRemoval p  = new DuplicateRemoval();
             p.Main();
 
         }

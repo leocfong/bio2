@@ -58,7 +58,7 @@ namespace bio2
         public void Main()
         {
             List<int> a = new List<int>() { 1, 3, 5, 7, 9 };
-            List<int> b = new List<int>() { 10, 30, 50, 70, 90 };
+            List<int> b = new List<int>() { 10, 30, 50, 70, 90 }; 
             List<int> d = new List<int>() { 1, 3, 5, 7, 9, 10, 30, 50, 70, 90 };
             List<int> c = mergeSort(d);
             Utility.print(c);
